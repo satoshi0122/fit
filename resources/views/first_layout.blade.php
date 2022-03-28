@@ -127,15 +127,15 @@
       font-size: 1rem;
       position: relative;
       padding: 0.5rem 1rem 0.5rem 0.6rem;
-  }
-  input:hover {
-   background-color: #7bdff2;
-  }
-  input:active {
-   /* 押されたとき */
-   background-image: linear-gradient(180deg, #68d3db, #e5f4fc);
-   border: 1px solid skyblue;
-  }
+    }
+    input:hover {
+    background-color: #7bdff2;
+    }
+    input:active {
+    /* 押されたとき */
+    background-image: linear-gradient(180deg, #68d3db, #e5f4fc);
+    border: 1px solid skyblue;
+    }
 </style>
 </head>
 <body>

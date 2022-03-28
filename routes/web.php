@@ -22,7 +22,7 @@ Route::get('ito', 'Controller@ito')->name('ito');
     //return view('welcome');});
 Route::get('operations', 'operationsController@index')->name('operations.index');
 Route::get('operations/create', 'operationsController@create')->name('operations.create');
-Route::post('operations/create', 'operationsController@create')->name('operations.create');
+//Route::post('operations/create', 'operationsController@create')->name('operations.create');
 //Route::get('operations/{id}', 'operationsController@show')->name('operations.show');
 Route::post('operations/store', 'operationsController@store')->name('operations.store');
 //edit  {id｝ってすることで、editに引数としてＩDw阿多せる感じかな
