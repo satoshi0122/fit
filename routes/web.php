@@ -23,16 +23,16 @@ Route::get('ito', 'Controller@ito')->name('ito');
 //Route::get('/', function () {
     //return view('welcome');});
 Route::get('operations', 'operationsController@index')->name('operations.index');
-Route::get('operations/create', 'operationsController@create')->name('operations.create');
+Route::get('operations/create', 'OperationsController@create')->name('operations.create');
 //Route::post('operations/create', 'operationsController@create')->name('operations.create');
 //Route::get('operations/{id}', 'operationsController@show')->name('operations.show');
-Route::post('operations/store', 'operationsController@store')->name('operations.store');
+Route::post('operations/store', 'OperationsController@store')->name('operations.store');
 //edit  {id｝ってすることで、editに引数としてＩDw阿多せる感じかな
-Route::get('operations/{id}', 'operationsController@edit')->name('operations.edit');
+Route::get('operations/{id}', 'OperationsController@edit')->name('operations.edit');
 //Route::post('operations/edit', 'operationsController@edit')->name('operations.editup');
 //Route::patch('operations/', 'operationsController@update')->name('operations.update');
-Route::patch('operations/{id}/', 'operationsController@update')->name('operations.update');
-Route::delete('operations/{id}', 'operationsController@destroy')->name('operations.destroy');
+Route::patch('operations/{id}/', 'OperationsController@update')->name('operations.update');
+Route::delete('operations/{id}', 'OperationsController@destroy')->name('operations.destroy');
 
 
 
