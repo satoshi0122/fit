@@ -37,20 +37,20 @@ Route::delete('operations/{id}', 'OperationsController@destroy')->name('operatio
 
 
 
-Route::get('schedules/index/{group_id}/{tn}', 'schedulesController@indexH')->name('schedules.index');
+Route::get('schedules/index/{group_id}/{tn}', 'SchedulesController@indexH')->name('schedules.index');
 //createを先にしたmemoールーティングがindexHの時点で多いから？先にしないとルーティングが発動しない💩
 
 
 
 
-Route::get('schedules/edit/{group_id}/{tn}/{id}', 'schedulesController@edit')->name('schedules.edit');
-Route::patch('/update', 'schedulesController@update')->name('schedules.update');
-Route::delete('/delete/{id}', 'schedulesController@destroy')->name('schedules.destroy');
+Route::get('schedules/edit/{group_id}/{tn}/{id}', 'SchedulesController@edit')->name('schedules.edit');
+Route::patch('/update', 'SchedulesController@update')->name('schedules.update');
+Route::delete('/delete/{id}', 'SchedulesController@destroy')->name('schedules.destroy');
 
 
-Route::get('schedules/create/{group_id}/{tn}/', 'schedulesController@create')->name('schedules.create');
-Route::post('schedules/create/{group_id}/{tn}', 'schedulesController@create')->name('schedules.create');
-Route::post('/store', 'schedulesController@store')->name('schedules.store');
+Route::get('schedules/create/{group_id}/{tn}/', 'SchedulesController@create')->name('schedules.create');
+Route::post('schedules/create/{group_id}/{tn}', 'SchedulesController@create')->name('schedules.create');
+Route::post('/store', 'SchedulesController@store')->name('schedules.store');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
