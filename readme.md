@@ -1,5 +1,6 @@
 # 学生団体　スケジュール管理システム
  
+ https://docs.google.com/forms/d/1NrfICsVTNPgddx2fEM405qeYfzWKfBkes9FzKfSZJTk/edit?chromeless=1
 この成果物は、学生団体【FIT隊】に所属している学生の、空きコマをわかりやすく閲覧するために製作しました。元々はエクセルで、そしてPHPで製作をし、より機能やUIUXを充実させるため、laravelを使用しました。
  
  
